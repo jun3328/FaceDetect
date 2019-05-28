@@ -1,7 +1,6 @@
 cmake_minimum_required(VERSION 3.4.1)
 
-set(pathPROJECT C:/Users/Lee/AndroidStudioProjects/OpcvApplication) # 수정필요
-set(pathOPENCV ${pathPROJECT}/opencv)
+set(pathOPENCV ${CMAKE_CURRENT_SOURCE_DIR}/../../../../opencv)
 set(pathLIBOPENCV_JAVA ${pathOPENCV}/native/libs/${ANDROID_ABI}/libopencv_java4.so)
 set(CMAKE_VERBOSE_MAKEFILE on)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=gnu++11")

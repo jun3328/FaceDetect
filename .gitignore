@@ -6,6 +6,8 @@
 /build
 /captures
 .externalNativeBuild
-/app/src/androidTest
-/app/src/test
+app/src/androidTest
+app/src/test
 app/google-services.json
+opencv/build
+opencv/.idea
