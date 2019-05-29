@@ -20,7 +20,7 @@ float resize(Mat img_src, Mat &img_resize, int resize_width){
 }
 
 extern "C" JNIEXPORT jlong JNICALL
-Java_io_github_jesterz91_opcvapplication_MainActivity_loadCascade(
+Java_io_github_jesterz91_opcvapplication_DetectActivity_loadCascade(
         JNIEnv *env, jobject instance,
         jstring cascadeFileName_) {
 
@@ -47,7 +47,7 @@ Java_io_github_jesterz91_opcvapplication_MainActivity_loadCascade(
     return ret;
 }
 extern "C" JNIEXPORT void JNICALL
-Java_io_github_jesterz91_opcvapplication_MainActivity_detect(
+Java_io_github_jesterz91_opcvapplication_DetectActivity_detect(
         JNIEnv *env, jobject instance,
         jlong cascadeClassifier_face, jlong cascadeClassifier_eye,
         jlong matAddrInput, jlong matAddrResult) {
